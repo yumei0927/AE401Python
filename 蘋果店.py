@@ -16,6 +16,7 @@ while True:
             
 
     if (y == 1) :
+        print('')
         a = int(input('有幾顆蘋果: '))
         a_m = int(input('一顆多少錢: '))
         print('')
@@ -24,6 +25,7 @@ while True:
         print('')
         
     elif (y == 2):
+        print('')
         a_c = int(input('進多少顆蘋果: '))
         print('')
         print('進',a_c,'顆蘋果')
@@ -32,6 +34,7 @@ while True:
         print('')
 
     elif (y == 3):
+        print('')
         a_o = int(input('賣出多少顆蘋果: '))
         print('')
         print('賣出',a_o,'顆蘋果')
@@ -59,6 +62,20 @@ while True:
         print('')
 
     else:
+        all_m = str(all_m)
+        z = ('總收入: ' + all_m + '\n')
+        all_a = str(all_a)
+        q = ('共賣出' + all_a + '顆蘋果\n')
+        a = str(a)
+        v = ('目前剩' + a + '顆蘋果\n')
+        
+        fo = open('蘋果店.txt','w')
+
+        fo.write(z)
+        fo.write(q)
+        fo.write(v)
+        
+        fo.close()
         break
             
 
